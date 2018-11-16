@@ -46,8 +46,20 @@ Doors will open at 9am CET on Friday 16th and close at 5pm CET on Sunday 18th No
 
 <h2>Keynotes</h2>
 
-<div class="keynote">
-    <h3>Ryan Scott</h3>
+<a name="RyanScott"><div class="keynote">
+    <h3>The Curious Case of Pattern-Match Coverage Checking</h3>
+    <h4>Ryan Scott</h4>
+    <p>
+        Patterns in Haskell are useful, but they're prone to issues such as
+        incomplete and redundant patterns if used carelessly. Thankfully, GHC
+        offers a very handy static analysis, called pattern-match coverage
+        checking, which emits warnings if you use patterns recklessly. This talk
+        explores the design considerations of coverage checking, considers some of
+        the more challenging aspects of determining whether patterns are
+        exhaustive, and even demonstrates some patterns that aren't checked
+        correctly (as of GHC 8.6!) but will be soon.
+    </p>
+
     <p>
         Ryan is a Ph.D student at Indiana University, where he
         attempts to combine techniques from software verification and
@@ -59,9 +71,9 @@ Doors will open at 9am CET on Friday 16th and close at 5pm CET on Sunday 18th No
         Core Libraries Committee and maintains libraries ranging from
         <code>criterion</code> to <code>singletons</code>.
     </p>
-</div>
+</div></a>
 
-<div class="keynote">
+<a name="BenGamari"><div class="keynote">
     <h3>Ben Gamari</h3>
     <p>
         Ben uses Haskell in fields as diverse as applied machine
@@ -88,10 +100,26 @@ Doors will open at 9am CET on Friday 16th and close at 5pm CET on Sunday 18th No
         Massachusetts and has publications spanning social network
         analysis, computational physics, and biophysics.
     </p>
-</div>
+</div></a>
 
-<div class="keynote">
-    <h3>Matthew Pickering</h3>
+<a name="MatthewPickering"><div class="keynote">
+    <h3>Beautiful Template Haskell</h3>
+    <h4>Matthew Pickering</h4>
+    <p>
+        Forget everything you know about Template Haskell. We will enter the
+        beautiful world of Typed Template Haskell where its only possible to
+        construct well-scoped and well-typed terms. Why? By writing our
+        program in multiple stages, we can guarantee to eliminate the
+        interpretative overhead caused by abstraction.
+    </p>
+    <p>
+        Mattew will give an introduction to Typed Template Haskell and then
+        describe some examples of how to construct abstract and efficient
+        programs using techniques from multi-stage programming. We will
+        construct an "efficient" power function and also give a sketch of how
+        to implement a SQL query compiler as inspired by the functional pearl
+        "A SQL to C Compiler in 500 Lines of Code".
+    </p>
     <p>
         Matthew is a PhD student at the University of Bristol focusing on
         program generation with applications to optimisation. In the quest
@@ -99,7 +127,7 @@ Doors will open at 9am CET on Friday 16th and close at 5pm CET on Sunday 18th No
         to GHC where he has recently been working on making the compiler
         easier to extend by using source plugins.
     </p>
-</div>
+</div></a>
 
 <h2>Registration</h2>
 
@@ -146,7 +174,7 @@ to open up a few more spots.
   </tr>
   <tr>
     <td align="right">11:00</td>
-    <td colspan="2">Keynote</td>
+    <td colspan="2">Keynote: <a href="#RyanScott">Ryan Scott: <emph>The Curious Case of Pattern-Match Coverage Checking</emph></a></td>
   </tr>
   <tr>
     <td align="right">12:30</td>
@@ -186,7 +214,7 @@ to open up a few more spots.
   </tr>
   <tr>
     <td align="right">11:00</td>
-    <td colspan="2">Keynote</td>
+    <td colspan="2">Keynote: <a href="MatthewPickering">Matthew Pickering: <emph>Beautiful Template Haskell</emph></a></td>
   </tr>
   <tr>
     <td align="right">12:30</td>
@@ -230,7 +258,7 @@ to open up a few more spots.
   </tr>
   <tr>
     <td align="right">11:00</td>
-    <td colspan="2">Keynote</td>
+    <td colspan="2">Keynote: <a href="BenGamari">Ben Gamari</a></td>
   </tr>
   <tr>
     <td align="right">14:00</td>
@@ -386,19 +414,6 @@ to open up a few more spots.
   <li>Elm language server protocol</li>
   <li><code>ghcmod</code></li>
 </ul>
-
-<h2>MuniHac 2016</h2>
-
-The last MuniHac took place in September 2016 at TNG Technology Consulting in
-Munich.
-
-<h3>Keynotes 2016</h3>
-<ul>
-    <li><b>Gabriel Gonzalez</b>: <i>Beautiful folds are practical, too</i> (<a href="https://youtu.be/6a5Ti0r8Q2s">https://youtu.be/6a5Ti0r8Q2s</a>)</li>
-    <li><b>Jasper van der Jeugt</b>: <i>Hakyll</i> (<a href="https://youtu.be/t8gim17hryw">https://youtu.be/t8gim17hryw</a>)</li>
-    <li><b>Bas van Dijk</b>: <i>Functional Programming at LumiGuide</i> (<a href="https://youtu.be/1r6sYrfCFCc">https://youtu.be/1r6sYrfCFCc</a>)</li>
-</ul>
-
 
 <h2>MuniHac 2016</h2>
 

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MuniHac 2018</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/custom.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+    <img alt="munihac logo" src="img/2018/header.png">
+</header>
+
+<h1>MuniHac</h1>
+
+<p>
+MuniHac is a three day Haskell hackathon taking place from <strong>Friday 16th to Sunday 18th November 2018</strong>
+in the beautiful city of Munich, hosted and sponsored by TNG Technology Consulting GmbH and co-organized by Well-Typed LLP.
+The Hackathon is intended to follow the tradition of other Haskell Hackathons such as the ZuriHac, HacBerlin, UHac and many others.
+</p>
+<p>
+We have capacity for ~80 Haskellers to collaborate on any Haskell-related
+project they like. There will be beginner workshops and a mentor program to
+help you get started. Of course you can as well start hacking Haskell right away.
+Anyone is welcome to participate. <strong>Beginner or pro, we've got you covered :)</strong>
+</p>
+<p>
+Hacking on Haskell projects will be the main focus of the event, but we will also have a
+couple of talks by renowned Haskellers.
+The MuniHac is furthermore  a great opportunity to meet and socialize with fellow
+Haskellers and have a great time together. Among other things, we are looking
+forward to having BBQ, pizza and a traditional Wei&szlig;wurstfr&uuml;hst&uuml;ck.
+</p>
+
+<p style="font-style: italic;">
+Doors will open at 9am CET on Friday 16th and close at 5pm CET on Sunday 18th November 2018.
+</p>
+
+<p>
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <img alt="picture of participants" src="img/2018/group_picture.jpg" width="100%">
+        </div>
+    </div>
+</p>
+
+<p>
+    <div class="row">
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img1.jpg"><img src="img/2018/img1-thumb.jpg" width="100%"></a></div>
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img2.jpg"><img src="img/2018/img2-thumb.jpg" width="100%"></a></div>
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img3.jpg"><img src="img/2018/img3-thumb.jpg" width="100%"></a></div>
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img4.jpg"><img src="img/2018/img4-thumb.jpg" width="100%"></a></div>
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img5.jpg"><img src="img/2018/img5-thumb.jpg" width="100%"></a></div>
+        <div class="col-xs-6 col-md-2"><a href="img/2018/img6.jpg"><img src="img/2018/img6-thumb.jpg" width="100%"></a></div>
+    </div>
+</p>
+
+<h2>Keynotes</h2>
+
+<a name="RyanScott"></a>
+<div class="keynote">
+    <h3>The Curious Case of Pattern-Match Coverage Checking</h3>
+    <h4>Ryan Scott</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                Patterns in Haskell are useful, but they're prone to issues such as
+                incomplete and redundant patterns if used carelessly. Thankfully, GHC
+                offers a very handy static analysis, called pattern-match coverage
+                checking, which emits warnings if you use patterns recklessly. This talk
+                explores the design considerations of coverage checking, considers some of
+                the more challenging aspects of determining whether patterns are
+                exhaustive, and even demonstrates some patterns that aren't checked
+                correctly (as of GHC 8.6!) but will be soon.
+            </p>
+
+            <p>
+                Ryan is a Ph.D student at Indiana University, where he
+                attempts to combine techniques from software verification and
+                determinism (sometimes successfully!). He is also a key
+                contributor to GHC, where he specializes in the areas of
+                <code>deriving</code>, Template Haskell, pattern-match coverage
+                checking, and various odds and ends in the typechecker. Through a
+                series of strange coincidences, he is also a member of the Haskell
+                Core Libraries Committee and maintains libraries ranging from
+                <code>criterion</code> to <code>singletons</code>.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/nDmNTRG1V_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<a name="MatthewPickering"></a>
+<div class="keynote">
+    <h3>Beautiful Template Haskell</h3>
+    <h4>Matthew Pickering</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                Forget everything you know about Template Haskell. We will enter the
+                beautiful world of Typed Template Haskell where its only possible to
+                construct well-scoped and well-typed terms. Why? By writing our
+                program in multiple stages, we can guarantee to eliminate the
+                interpretative overhead caused by abstraction.
+            </p>
+            <p>
+                Matthew will give an introduction to Typed Template Haskell and then
+                describe some examples of how to construct abstract and efficient
+                programs using techniques from multi-stage programming. We will
+                construct an "efficient" power function and also give a sketch of how
+                to implement a SQL query compiler as inspired by the functional pearl
+                "A SQL to C Compiler in 500 Lines of Code".
+            </p>
+            <p>
+                Matthew is a PhD student at the University of Bristol focusing on
+                program generation with applications to optimisation. In the quest
+                to write the perfect program he has become a regular contributor
+                to GHC where he has recently been working on making the compiler
+                easier to extend by using source plugins.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/AzJVFkm42zM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<a name="BenGamari"></a>
+<div class="keynote">
+    <h3>A low-latency garbage collector for GHC</h3>
+    <h4>Ben Gamari</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                As real-time and distributed systems become common-place, latencies
+                associated with memory management begin to limit the usability of
+                garbage collected languages. In particular, the Glasgow Haskell Compiler
+                has long relied on a throughput-oriented copying garbage collector;
+                while this collector provides good memory locality for user programs,
+                minimal fragmentation, and efficient collection, it imposes large
+                latencies when collecting large heaps.
+            </p>
+
+            <p>
+                Recent language implementations (e.g. Go, Mono, various Java implementations)
+                have moved away from have avoided the problem of garbage collection
+                latency through use of concurrent collection on a non-moving heap. In
+                this talk Ben will provide a high-level overview of a concurrent,
+                non-moving garbage collector implemented for the Glasgow
+                Haskell Compiler. This collector offers significantly improved pause
+                times without the need for code recompilation and with minimal impact on
+                program runtime. He will discuss the trade-offs implicit in the design, the
+                challenges posed by collecting Haskell in particular, and present some
+                preliminary performance measurements from a prototype implementation.
+            </p>
+
+            <p>
+                Ben uses Haskell in fields as diverse as applied machine
+                learning, scientific data analysis, robotics control, and compiler
+                engineering. He is an active contributor to the Glasgow Haskell
+                Compiler with focus on code generation, Core optimization, and the
+                runtime system, and has worked extensively towards bringing GHC to
+                the ARM architecture.
+            </p>
+
+            <p>
+                He has experience implementing numerical methods for machine learning, with an
+                eye towards leveraging Haskell’s strong type system to enforce
+                correctness at compile-time. Ben has expertise developing
+                high-performance distributed systems in a wide range of
+                languages. Past projects include GPU-based modelling of
+                high-energy particle interactions and an implementation of
+                parallel machine learning algorithms for large-scale social
+                network analysis.
+            </p>
+
+            <p>
+                He is completing a PhD in Physics at the University of
+                Massachusetts and has publications spanning social network
+                analysis, computational physics, and biophysics.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/7_ig6r2C-d4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<h2>Projects</h2>
+
+<ul>
+  <li>Liquid Haskell</li>
+  <li><code>DerivingVia</code> + JSON</li>
+  <li>Build systems à la carte</li>
+  <li>GHC Hacking</li>
+  <li>Functional database in Haskell</li>
+  <li><code>dgraph-lib</code></li>
+  <li>Microservice checker</li>
+  <li>Graph-coloring meta heuristics</li>
+  <li>Elm language server protocol</li>
+  <li><code>ghcmod</code></li>
+</ul>
+
+<h2>Schedule</h2>
+
+<p>Please note that all times are CET.</p>
+
+<table style="border-spacing: 2px; border-collapse: separate">
+  <!-- Day 1 -->
+  <tr>
+    <td colspan="3" style="border:1px solid black; padding-left:2pt; font-weight:bold; font-size: 125%; background-color: Plum">Friday, Nov. 16th, 2018</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold">Time</td>
+    <td style="font-weight: bold">Hackathon</td>
+    <td style="font-weight: bold">Workshop</td>
+  </tr>
+
+  <tr>
+    <td align="right">8:00</td>
+    <td colspan="2">Doors open &amp; Registration</td>
+  </tr>
+  <tr>
+    <td align="right">8:30</td>
+    <td colspan="2">Breakfast</td>
+  </tr>
+  <tr>
+    <td align="right">9:00</td>
+    <td colspan="2">Opening</td>
+  </tr>
+  <tr>
+    <td align="right">9:15</td>
+    <td colspan="2">Time for everybody to present their projects and/or find fellow Haskellers to work with</td>
+  </tr>
+  <tr>
+    <td align="right">9:30</td>
+    <td>Hack on</td>
+    <td>Beginner's Workshop</td>
+  </tr>
+  <tr>
+    <td align="right">11:00</td>
+    <td colspan="2">Keynote: <a href="#RyanScott">Ryan Scott: <i>The Curious Case of Pattern-Match Coverage Checking</i></a></td>
+  </tr>
+  <tr>
+    <td align="right">12:30</td>
+    <td colspan="2">Lunch</td>
+  </tr>
+  <tr>
+    <td align="right">14:00</td>
+    <td>Hack on</td>
+    <td>Beginner's workshop (continued)</td>
+  </tr>
+  <tr>
+    <td align="right">15:30</td>
+    <td colspan="2">Coffee &amp; cake</td>
+  </tr>
+  <tr>
+    <td align="right">17:00</td>
+    <td colspan="2">Official end</td>
+  </tr>
+  <tr>
+    <td align="right">19:00</td>
+    <td colspan="2">After-hack get-together: <i>Bei Mario</i> (<a href="https://goo.gl/maps/dzu52Qvr3d62">https://goo.gl/maps/dzu52Qvr3d62</a>)</td>
+  </tr>
+
+  <!-- Day 2 -->
+  <tr>
+    <td colspan="3" style="border:1px solid black; padding-left:2pt; font-weight:bold; font-size: 125%; background-color: Plum">Saturday, Nov. 17th, 2018</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold">Time</td>
+    <td style="font-weight: bold">Hackathon</td>
+    <td style="font-weight: bold">Workshop</td>
+  </tr>
+
+  <tr>
+    <td align="right">8:30</td>
+    <td colspan="2">Doors open &amp; Breakfast</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td colspan="2">Hack on</td>
+  </tr>
+  <tr>
+    <td align="right">11:00</td>
+    <td colspan="2">Keynote: <a href="#MatthewPickering">Matthew Pickering: <i>Beautiful Template Haskell</i></a></td>
+  </tr>
+  <tr>
+    <td align="right">12:30</td>
+    <td colspan="2">Lunch</td>
+  </tr>
+  <tr>
+    <td align="right">14:00</td>
+    <td>Hack on</td>
+    <td>Datatype-Generic Programming</td>
+  </tr>
+  <tr>
+    <td align="right">15:30</td>
+    <td colspan="2">Coffee &amp; cake</td>
+  </tr>
+  <tr>
+    <td align="right">17:00</td>
+    <td colspan="2">Official end</td>
+  </tr>
+  <tr>
+    <td align="right">19:00</td>
+    <td colspan="2">After-hack get-together: <i>Prinz Alfons</i> (<a href="https://goo.gl/maps/LgmLF4qnqn22">https://goo.gl/maps/LgmLF4qnqn22</a>)</td>
+  </tr>
+
+  <!-- Day 3 -->
+  <tr>
+    <td colspan="3" style="border:1px solid black; padding-left:2pt; font-weight:bold; font-size: 125%; background-color: Plum">Sunday, Nov. 18th, 2018</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold">Time</td>
+    <td style="font-weight: bold">Hackathon</td>
+    <td style="font-weight: bold">Workshop</td>
+  </tr>
+
+  <tr>
+    <td align="right">8:30</td>
+    <td colspan="2">Doors open</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="2">Hack on</td>
+  </tr>
+  <tr>
+    <td align="right">9:30</td>
+    <td colspan="2">Traditional Bavarian Breakfast</td>
+  </tr>
+  <tr>
+    <td align="right">11:00</td>
+    <td colspan="2">Keynote: <a href="#BenGamari">Ben Gamari: <i>A low-latency garbage collector for GHC</i></a></td>
+  </tr>
+  <tr>
+    <td align="right">14:00</td>
+    <td colspan="2">Coffee &amp; cake</td>
+  </tr>
+  <tr>
+    <td align="right">14:30</td>
+    <td colspan="2">Project presentations</td>
+  </tr>
+  <tr>
+    <td align="right">17:00</td>
+    <td colspan="2">Doors close</td>
+  </tr>
+</table>
+
+<h2>Other years</h2>
+
+<ul>
+  <li><a href="2018.html">MuniHac 2018</a></li>
+  <li><a href="2016.html">MuniHac 2016</a></li>
+<hr />
+
+<div align="center"><a href="impressum.html">Legal Notice / Impressum</a></div>
+
+<div id="footer" class="footer">
+    Site proudly generated by <a href="http://github.com/jaspervdj/hakyll">hakyll</a>.
+</div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
